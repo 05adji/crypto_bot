@@ -1,0 +1,721 @@
+2025-04-25 11:52:23,273 - crypto_bot - INFO - Initializing trading bot with config: configs/default.json
+2025-04-25 11:52:23,274 - utils.config_loader - INFO - Configuration loaded successfully
+2025-04-25 11:52:43,907 - data.collectors.market_data - ERROR - Exchange connection error: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1745556743285&recvWindow=10000&signature=2d65bb55c76e2b4fed524164993b15f77e8c623d8b66e99c353ca2deb6c19a10
+2025-04-25 11:52:43,915 - data.collectors.sentiment_data - INFO - Twitter API initialized successfully
+2025-04-25 11:52:44,101 - data.collectors.sentiment_data - INFO - Reddit API initialized successfully
+2025-04-25 11:52:44,102 - crypto_bot - INFO - Loading initial data...
+2025-04-25 11:52:44,102 - data.collectors.market_data - INFO - Loading data for BTC/USDT (1h)
+2025-04-25 11:52:44,109 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (1h)
+2025-04-25 11:53:14,159 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:53:14,159 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 11:53:19,176 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (1h)
+2025-04-25 11:53:49,240 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:53:49,241 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 11:53:59,258 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (1h)
+2025-04-25 11:54:13,189 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:54:13,189 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:54:13,189 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (1h)
+2025-04-25 11:54:13,196 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (1h)
+2025-04-25 11:54:13,196 - data.collectors.market_data - INFO - Loading data for BTC/USDT (4h)
+2025-04-25 11:54:13,205 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (4h)
+2025-04-25 11:54:25,218 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:54:25,219 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 11:54:30,231 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (4h)
+2025-04-25 11:54:50,629 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:54:50,629 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 11:55:00,650 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (4h)
+2025-04-25 11:55:12,677 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:55:12,677 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:55:12,678 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (4h)
+2025-04-25 11:55:12,684 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (4h)
+2025-04-25 11:55:12,684 - data.collectors.market_data - INFO - Loading data for BTC/USDT (1d)
+2025-04-25 11:55:12,692 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (1d)
+2025-04-25 11:55:13,803 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:55:13,803 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 11:55:18,815 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (1d)
+2025-04-25 11:55:30,840 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:55:30,840 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 11:55:40,858 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (1d)
+2025-04-25 11:55:52,907 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:55:52,907 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:55:52,907 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (1d)
+2025-04-25 11:55:52,912 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (1d)
+2025-04-25 11:55:52,912 - data.collectors.market_data - INFO - Loading data for ETH/USDT (1h)
+2025-04-25 11:55:52,919 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (1h)
+2025-04-25 11:56:20,988 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:56:20,988 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 11:56:26,004 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (1h)
+2025-04-25 11:56:56,054 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:56:56,054 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 11:57:06,070 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (1h)
+2025-04-25 11:57:18,096 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:57:18,096 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:57:18,096 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (1h)
+2025-04-25 11:57:18,103 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (1h)
+2025-04-25 11:57:18,103 - data.collectors.market_data - INFO - Loading data for ETH/USDT (4h)
+2025-04-25 11:57:18,115 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (4h)
+2025-04-25 11:57:30,142 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:57:30,142 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 11:57:35,158 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (4h)
+2025-04-25 11:57:47,182 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:57:47,182 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 11:57:57,200 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (4h)
+2025-04-25 11:58:09,218 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:58:09,218 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:58:09,218 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (4h)
+2025-04-25 11:58:09,223 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (4h)
+2025-04-25 11:58:09,224 - data.collectors.market_data - INFO - Loading data for ETH/USDT (1d)
+2025-04-25 11:58:09,232 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (1d)
+2025-04-25 11:58:16,442 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:58:16,442 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 11:58:21,458 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (1d)
+2025-04-25 11:58:24,603 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:58:24,603 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 11:58:34,621 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (1d)
+2025-04-25 11:59:04,671 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:59:04,671 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:59:04,671 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (1d)
+2025-04-25 11:59:04,675 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (1d)
+2025-04-25 11:59:04,675 - data.collectors.market_data - INFO - Loading data for SOL/USDT (1h)
+2025-04-25 11:59:04,684 - data.collectors.market_data - INFO - Attempt 1: Fetching data for SOL/USDT (1h)
+2025-04-25 11:59:17,756 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:59:17,756 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 11:59:22,767 - data.collectors.market_data - INFO - Attempt 2: Fetching data for SOL/USDT (1h)
+2025-04-25 11:59:34,798 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:59:34,798 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 11:59:44,815 - data.collectors.market_data - INFO - Attempt 3: Fetching data for SOL/USDT (1h)
+2025-04-25 11:59:56,852 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:59:56,852 - data.collectors.market_data - ERROR - All attempts failed for SOL/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 11:59:56,852 - data.collectors.market_data - WARNING - Using synthetic data for SOL/USDT (1h)
+2025-04-25 11:59:56,856 - data.collectors.market_data - INFO - Loaded 501 candles for SOL/USDT (1h)
+2025-04-25 11:59:56,856 - data.collectors.market_data - INFO - Loading data for SOL/USDT (4h)
+2025-04-25 11:59:56,865 - data.collectors.market_data - INFO - Attempt 1: Fetching data for SOL/USDT (4h)
+2025-04-25 12:00:08,890 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:00:08,890 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:00:13,903 - data.collectors.market_data - INFO - Attempt 2: Fetching data for SOL/USDT (4h)
+2025-04-25 12:00:25,922 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:00:25,922 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:00:35,940 - data.collectors.market_data - INFO - Attempt 3: Fetching data for SOL/USDT (4h)
+2025-04-25 12:00:43,155 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:00:43,155 - data.collectors.market_data - ERROR - All attempts failed for SOL/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:00:43,155 - data.collectors.market_data - WARNING - Using synthetic data for SOL/USDT (4h)
+2025-04-25 12:00:43,160 - data.collectors.market_data - INFO - Loaded 501 candles for SOL/USDT (4h)
+2025-04-25 12:00:43,160 - data.collectors.market_data - INFO - Loading data for SOL/USDT (1d)
+2025-04-25 12:00:43,167 - data.collectors.market_data - INFO - Attempt 1: Fetching data for SOL/USDT (1d)
+2025-04-25 12:00:55,192 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:00:55,192 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:01:00,205 - data.collectors.market_data - INFO - Attempt 2: Fetching data for SOL/USDT (1d)
+2025-04-25 12:01:30,254 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:01:30,254 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:01:40,271 - data.collectors.market_data - INFO - Attempt 3: Fetching data for SOL/USDT (1d)
+2025-04-25 12:02:10,323 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:02:10,323 - data.collectors.market_data - ERROR - All attempts failed for SOL/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:02:10,323 - data.collectors.market_data - WARNING - Using synthetic data for SOL/USDT (1d)
+2025-04-25 12:02:10,330 - data.collectors.market_data - INFO - Loaded 501 candles for SOL/USDT (1d)
+2025-04-25 12:02:10,330 - data.collectors.market_data - INFO - Loading data for BNB/USDT (1h)
+2025-04-25 12:02:10,339 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BNB/USDT (1h)
+2025-04-25 12:02:40,388 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:02:40,389 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:02:45,399 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BNB/USDT (1h)
+2025-04-25 12:03:05,989 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:03:05,989 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:03:16,003 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BNB/USDT (1h)
+2025-04-25 12:03:28,028 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:03:28,028 - data.collectors.market_data - ERROR - All attempts failed for BNB/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:03:28,028 - data.collectors.market_data - WARNING - Using synthetic data for BNB/USDT (1h)
+2025-04-25 12:03:28,033 - data.collectors.market_data - INFO - Loaded 501 candles for BNB/USDT (1h)
+2025-04-25 12:03:28,034 - data.collectors.market_data - INFO - Loading data for BNB/USDT (4h)
+2025-04-25 12:03:28,042 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BNB/USDT (4h)
+2025-04-25 12:03:40,058 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:03:40,058 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:03:45,155 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BNB/USDT (4h)
+2025-04-25 12:03:57,199 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:03:57,200 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:04:07,216 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BNB/USDT (4h)
+2025-04-25 12:04:37,272 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:04:37,272 - data.collectors.market_data - ERROR - All attempts failed for BNB/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:04:37,272 - data.collectors.market_data - WARNING - Using synthetic data for BNB/USDT (4h)
+2025-04-25 12:04:37,276 - data.collectors.market_data - INFO - Loaded 501 candles for BNB/USDT (4h)
+2025-04-25 12:04:37,276 - data.collectors.market_data - INFO - Loading data for BNB/USDT (1d)
+2025-04-25 12:04:37,282 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BNB/USDT (1d)
+2025-04-25 12:04:38,375 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:04:38,375 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:04:43,389 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BNB/USDT (1d)
+2025-04-25 12:05:13,438 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:05:13,438 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:05:23,456 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BNB/USDT (1d)
+2025-04-25 12:05:35,514 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:05:35,515 - data.collectors.market_data - ERROR - All attempts failed for BNB/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:05:35,515 - data.collectors.market_data - WARNING - Using synthetic data for BNB/USDT (1d)
+2025-04-25 12:05:35,520 - data.collectors.market_data - INFO - Loaded 501 candles for BNB/USDT (1d)
+2025-04-25 12:05:35,520 - data.collectors.market_data - INFO - Loading data for AVAX/USDT (1h)
+2025-04-25 12:05:35,526 - data.collectors.market_data - INFO - Attempt 1: Fetching data for AVAX/USDT (1h)
+2025-04-25 12:05:42,757 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:05:42,757 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:05:47,772 - data.collectors.market_data - INFO - Attempt 2: Fetching data for AVAX/USDT (1h)
+2025-04-25 12:05:54,993 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:05:54,994 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:06:05,013 - data.collectors.market_data - INFO - Attempt 3: Fetching data for AVAX/USDT (1h)
+2025-04-25 12:06:17,066 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:06:17,066 - data.collectors.market_data - ERROR - All attempts failed for AVAX/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:06:17,066 - data.collectors.market_data - WARNING - Using synthetic data for AVAX/USDT (1h)
+2025-04-25 12:06:17,069 - data.collectors.market_data - INFO - Loaded 501 candles for AVAX/USDT (1h)
+2025-04-25 12:06:17,070 - data.collectors.market_data - INFO - Loading data for AVAX/USDT (4h)
+2025-04-25 12:06:17,075 - data.collectors.market_data - INFO - Attempt 1: Fetching data for AVAX/USDT (4h)
+2025-04-25 12:06:29,099 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:06:29,099 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:06:34,113 - data.collectors.market_data - INFO - Attempt 2: Fetching data for AVAX/USDT (4h)
+2025-04-25 12:06:46,129 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:06:46,129 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:06:56,148 - data.collectors.market_data - INFO - Attempt 3: Fetching data for AVAX/USDT (4h)
+2025-04-25 12:07:08,185 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:07:08,185 - data.collectors.market_data - ERROR - All attempts failed for AVAX/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:07:08,185 - data.collectors.market_data - WARNING - Using synthetic data for AVAX/USDT (4h)
+2025-04-25 12:07:08,189 - data.collectors.market_data - INFO - Loaded 501 candles for AVAX/USDT (4h)
+2025-04-25 12:07:08,190 - data.collectors.market_data - INFO - Loading data for AVAX/USDT (1d)
+2025-04-25 12:07:08,197 - data.collectors.market_data - INFO - Attempt 1: Fetching data for AVAX/USDT (1d)
+2025-04-25 12:07:38,250 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:07:38,251 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:07:43,264 - data.collectors.market_data - INFO - Attempt 2: Fetching data for AVAX/USDT (1d)
+2025-04-25 12:08:13,305 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:08:13,305 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:08:23,324 - data.collectors.market_data - INFO - Attempt 3: Fetching data for AVAX/USDT (1d)
+2025-04-25 12:08:53,382 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:08:53,383 - data.collectors.market_data - ERROR - All attempts failed for AVAX/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:08:53,383 - data.collectors.market_data - WARNING - Using synthetic data for AVAX/USDT (1d)
+2025-04-25 12:08:53,386 - data.collectors.market_data - INFO - Loaded 501 candles for AVAX/USDT (1d)
+2025-04-25 12:08:53,509 - data.collectors.sentiment_data - INFO - Collecting sentiment data for BTC
+2025-04-25 12:08:53,777 - data.collectors.sentiment_data - ERROR - Error collecting Twitter data for BTC: 401 Unauthorized
+89 - Invalid or expired token.
+2025-04-25 12:09:05,819 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708ca2f0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:09:19,157 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708ca560>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:09:38,320 - data.collectors.sentiment_data - ERROR - Error collecting Reddit data for BTC: error with request HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708ca980>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-04-25 12:09:38,320 - data.collectors.sentiment_data - INFO - Collecting sentiment data for ETH
+2025-04-25 12:09:38,592 - data.collectors.sentiment_data - ERROR - Error collecting Twitter data for ETH: 401 Unauthorized
+89 - Invalid or expired token.
+2025-04-25 12:09:54,644 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708c9c90>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:10:11,810 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708c9a20>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:10:27,100 - data.collectors.sentiment_data - ERROR - Error collecting Reddit data for ETH: error with request HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708cb8e0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-04-25 12:10:27,101 - data.collectors.sentiment_data - INFO - Collecting sentiment data for SOL
+2025-04-25 12:10:27,390 - data.collectors.sentiment_data - ERROR - Error collecting Twitter data for SOL: 401 Unauthorized
+89 - Invalid or expired token.
+2025-04-25 12:10:43,434 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708cae90>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:11:00,413 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708cb9a0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:11:19,069 - data.collectors.sentiment_data - ERROR - Error collecting Reddit data for SOL: error with request HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708cba00>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-04-25 12:11:19,070 - data.collectors.sentiment_data - INFO - Collecting sentiment data for BNB
+2025-04-25 12:11:19,372 - data.collectors.sentiment_data - ERROR - Error collecting Twitter data for BNB: 401 Unauthorized
+89 - Invalid or expired token.
+2025-04-25 12:11:35,410 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708ca560>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:11:47,955 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708cbdc0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:12:02,526 - data.collectors.sentiment_data - ERROR - Error collecting Reddit data for BNB: error with request HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708e44f0>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-04-25 12:12:02,526 - data.collectors.sentiment_data - INFO - Collecting sentiment data for AVAX
+2025-04-25 12:12:02,941 - data.collectors.sentiment_data - ERROR - Error collecting Twitter data for AVAX: 401 Unauthorized
+89 - Invalid or expired token.
+2025-04-25 12:12:18,982 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708cab30>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:12:35,716 - prawcore - WARNING - Retrying due to ConnectionError(MaxRetryError("HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708e4640>: Failed to establish a new connection: [Errno 101] Network is unreachable'))")) status: GET https://oauth.reddit.com/r/cryptocurrency/search/
+2025-04-25 12:12:51,147 - data.collectors.sentiment_data - ERROR - Error collecting Reddit data for AVAX: error with request HTTPSConnectionPool(host='www.reddit.com', port=443): Max retries exceeded with url: /api/v1/access_token (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f1a708e5210>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-04-25 12:12:51,147 - data.collectors.onchain_data - INFO - Collecting on-chain data for BTC
+2025-04-25 12:12:51,377 - data.collectors.onchain_data - INFO - Successfully collected Bitcoin on-chain metrics
+2025-04-25 12:12:51,378 - data.collectors.onchain_data - INFO - Collecting on-chain data for ETH
+2025-04-25 12:12:54,827 - data.collectors.onchain_data - ERROR - Error collecting Ethereum on-chain data: 'str' object has no attribute 'get'
+2025-04-25 12:12:54,827 - data.collectors.onchain_data - WARNING - Generating synthetic on-chain data for ETH
+2025-04-25 12:12:54,827 - data.collectors.onchain_data - INFO - Collecting on-chain data for SOL
+2025-04-25 12:12:54,827 - data.collectors.onchain_data - WARNING - Generating synthetic on-chain data for SOL
+2025-04-25 12:12:54,827 - data.collectors.onchain_data - INFO - Collecting on-chain data for BNB
+2025-04-25 12:12:54,827 - data.collectors.onchain_data - WARNING - Generating synthetic on-chain data for BNB
+2025-04-25 12:12:54,827 - data.collectors.onchain_data - INFO - Collecting on-chain data for AVAX
+2025-04-25 12:12:54,827 - data.collectors.onchain_data - WARNING - Generating synthetic on-chain data for AVAX
+2025-04-25 12:12:54,828 - data.collectors.macro_data - INFO - Collecting macroeconomic data...
+2025-04-25 12:12:54,828 - data.collectors.macro_data - INFO - Fetching DFF from FRED
+2025-04-25 12:12:56,487 - data.collectors.macro_data - INFO - Fetching UNRATE from FRED
+2025-04-25 12:12:56,811 - data.collectors.macro_data - INFO - Fetching CPIAUCSL from FRED
+2025-04-25 12:12:57,204 - data.collectors.macro_data - INFO - Fetching T10Y2Y from FRED
+2025-04-25 12:12:57,739 - data.collectors.macro_data - INFO - Fetching VIXCLS from FRED
+2025-04-25 12:12:58,038 - strategies.manipulation_detector - WARNING - Potential market manipulation detected for BTC/USDT:
+2025-04-25 12:12:58,038 - strategies.manipulation_detector - WARNING -   - Wash trading pattern (confidence: 0.08)
+2025-04-25 12:12:58,039 - strategies.manipulation_detector - WARNING - Potential market manipulation detected for ETH/USDT:
+2025-04-25 12:12:58,040 - strategies.manipulation_detector - WARNING -   - Wash trading pattern (confidence: 0.08)
+2025-04-25 12:12:58,041 - strategies.manipulation_detector - WARNING - Potential market manipulation detected for SOL/USDT:
+2025-04-25 12:12:58,041 - strategies.manipulation_detector - WARNING -   - Wash trading pattern (confidence: 0.08)
+2025-04-25 12:12:58,042 - strategies.manipulation_detector - WARNING - Potential market manipulation detected for BNB/USDT:
+2025-04-25 12:12:58,043 - strategies.manipulation_detector - WARNING -   - Wash trading pattern (confidence: 0.08)
+2025-04-25 12:12:58,044 - strategies.manipulation_detector - WARNING - Potential market manipulation detected for AVAX/USDT:
+2025-04-25 12:12:58,044 - strategies.manipulation_detector - WARNING -   - Wash trading pattern (confidence: 0.08)
+2025-04-25 12:12:58,044 - strategies.pair_trading_strategy - INFO - Searching for cointegrated pairs...
+2025-04-25 12:12:58,045 - strategies.pair_trading_strategy - INFO - Tested 10 pairs, found 0 cointegrated pairs
+2025-04-25 12:12:58,045 - crypto_bot - INFO - Initial data loaded successfully
+2025-04-25 12:12:58,045 - crypto_bot - INFO - All components initialized successfully
+2025-04-25 12:12:58,046 - crypto_bot - INFO - Trading bot initialized successfully
+2025-04-25 12:12:58,046 - crypto_bot - INFO - Starting bot in BACKTEST mode for 180 days
+2025-04-25 12:12:58,046 - crypto_bot - INFO - Starting backtesting mode for last 180 days
+2025-04-25 12:12:58,046 - backtesting.backtester - INFO - Starting backtest...
+2025-04-25 12:12:58,046 - backtesting.backtester - INFO - Backtest period: 2024-10-27 to 2025-04-25
+2025-04-25 12:12:58,046 - execution.portfolio_manager - INFO - Portfolio reset to initial capital of $100
+2025-04-25 12:12:58,047 - backtesting.backtester - INFO - Loading historical data...
+2025-04-25 12:12:58,047 - data.collectors.market_data - INFO - Loading data for BTC/USDT (1h)
+2025-04-25 12:12:58,054 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (1h)
+2025-04-25 12:12:59,154 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:12:59,155 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:13:04,169 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (1h)
+2025-04-25 12:13:04,202 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:13:04,203 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:13:14,222 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (1h)
+2025-04-25 12:13:15,219 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:13:15,220 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:13:15,220 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (1h)
+2025-04-25 12:13:15,225 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (1h)
+2025-04-25 12:13:15,226 - data.collectors.market_data - INFO - Loading data for BTC/USDT (4h)
+2025-04-25 12:13:15,233 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (4h)
+2025-04-25 12:13:27,246 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:13:27,246 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:13:32,260 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (4h)
+2025-04-25 12:14:02,312 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:14:02,312 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:14:12,330 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (4h)
+2025-04-25 12:14:42,389 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:14:42,390 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:14:42,390 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (4h)
+2025-04-25 12:14:42,395 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (4h)
+2025-04-25 12:14:42,395 - data.collectors.market_data - INFO - Loading data for BTC/USDT (1d)
+2025-04-25 12:14:42,401 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (1d)
+2025-04-25 12:15:12,450 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:15:12,451 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:15:17,467 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (1d)
+2025-04-25 12:15:17,501 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:15:17,501 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:15:27,507 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (1d)
+2025-04-25 12:15:28,071 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:15:28,072 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:15:28,072 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (1d)
+2025-04-25 12:15:28,075 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (1d)
+2025-04-25 12:15:28,075 - data.collectors.market_data - INFO - Loading data for ETH/USDT (1h)
+2025-04-25 12:15:28,081 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (1h)
+2025-04-25 12:15:40,099 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:15:40,099 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:15:45,114 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (1h)
+2025-04-25 12:16:15,179 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:16:15,179 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:16:25,197 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (1h)
+2025-04-25 12:16:37,211 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:16:37,212 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:16:37,212 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (1h)
+2025-04-25 12:16:37,215 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (1h)
+2025-04-25 12:16:37,215 - data.collectors.market_data - INFO - Loading data for ETH/USDT (4h)
+2025-04-25 12:16:37,221 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (4h)
+2025-04-25 12:16:49,237 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:16:49,237 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:16:54,251 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (4h)
+2025-04-25 12:17:24,301 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:17:24,301 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:17:34,320 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (4h)
+2025-04-25 12:17:35,394 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:17:35,395 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:17:35,395 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (4h)
+2025-04-25 12:17:35,399 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (4h)
+2025-04-25 12:17:35,400 - data.collectors.market_data - INFO - Loading data for ETH/USDT (1d)
+2025-04-25 12:17:35,405 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (1d)
+2025-04-25 12:18:05,457 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:18:05,458 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:18:10,472 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (1d)
+2025-04-25 12:18:11,554 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:18:11,554 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:18:21,574 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (1d)
+2025-04-25 12:18:33,604 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:18:33,604 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:18:33,604 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (1d)
+2025-04-25 12:18:33,609 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (1d)
+2025-04-25 12:18:33,609 - data.collectors.market_data - INFO - Loading data for SOL/USDT (1h)
+2025-04-25 12:18:33,614 - data.collectors.market_data - INFO - Attempt 1: Fetching data for SOL/USDT (1h)
+2025-04-25 12:18:45,637 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:18:45,637 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:18:50,651 - data.collectors.market_data - INFO - Attempt 2: Fetching data for SOL/USDT (1h)
+2025-04-25 12:19:20,699 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:19:20,699 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:19:30,717 - data.collectors.market_data - INFO - Attempt 3: Fetching data for SOL/USDT (1h)
+2025-04-25 12:19:42,732 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:19:42,733 - data.collectors.market_data - ERROR - All attempts failed for SOL/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:19:42,733 - data.collectors.market_data - WARNING - Using synthetic data for SOL/USDT (1h)
+2025-04-25 12:19:42,738 - data.collectors.market_data - INFO - Loaded 501 candles for SOL/USDT (1h)
+2025-04-25 12:19:42,738 - data.collectors.market_data - INFO - Loading data for SOL/USDT (4h)
+2025-04-25 12:19:42,744 - data.collectors.market_data - INFO - Attempt 1: Fetching data for SOL/USDT (4h)
+2025-04-25 12:19:54,766 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:19:54,766 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:19:59,782 - data.collectors.market_data - INFO - Attempt 2: Fetching data for SOL/USDT (4h)
+2025-04-25 12:20:11,814 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:20:11,814 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:20:21,828 - data.collectors.market_data - INFO - Attempt 3: Fetching data for SOL/USDT (4h)
+2025-04-25 12:20:51,882 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:20:51,883 - data.collectors.market_data - ERROR - All attempts failed for SOL/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:20:51,883 - data.collectors.market_data - WARNING - Using synthetic data for SOL/USDT (4h)
+2025-04-25 12:20:51,886 - data.collectors.market_data - INFO - Loaded 501 candles for SOL/USDT (4h)
+2025-04-25 12:20:51,887 - data.collectors.market_data - INFO - Loading data for SOL/USDT (1d)
+2025-04-25 12:20:51,892 - data.collectors.market_data - INFO - Attempt 1: Fetching data for SOL/USDT (1d)
+2025-04-25 12:21:03,938 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:21:03,938 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:21:08,952 - data.collectors.market_data - INFO - Attempt 2: Fetching data for SOL/USDT (1d)
+2025-04-25 12:21:16,196 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:21:16,196 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:21:26,215 - data.collectors.market_data - INFO - Attempt 3: Fetching data for SOL/USDT (1d)
+2025-04-25 12:21:56,254 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:21:56,255 - data.collectors.market_data - ERROR - All attempts failed for SOL/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:21:56,255 - data.collectors.market_data - WARNING - Using synthetic data for SOL/USDT (1d)
+2025-04-25 12:21:56,258 - data.collectors.market_data - INFO - Loaded 501 candles for SOL/USDT (1d)
+2025-04-25 12:21:56,259 - data.collectors.market_data - INFO - Loading data for BNB/USDT (1h)
+2025-04-25 12:21:56,264 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BNB/USDT (1h)
+2025-04-25 12:22:26,325 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:22:26,325 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:22:31,339 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BNB/USDT (1h)
+2025-04-25 12:22:32,434 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:22:32,434 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:22:42,452 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BNB/USDT (1h)
+2025-04-25 12:22:42,472 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:22:42,472 - data.collectors.market_data - ERROR - All attempts failed for BNB/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:22:42,472 - data.collectors.market_data - WARNING - Using synthetic data for BNB/USDT (1h)
+2025-04-25 12:22:42,475 - data.collectors.market_data - INFO - Loaded 501 candles for BNB/USDT (1h)
+2025-04-25 12:22:42,475 - data.collectors.market_data - INFO - Loading data for BNB/USDT (4h)
+2025-04-25 12:22:42,481 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BNB/USDT (4h)
+2025-04-25 12:22:50,519 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:22:50,519 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:22:55,533 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BNB/USDT (4h)
+2025-04-25 12:22:56,597 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:22:56,597 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:23:06,615 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BNB/USDT (4h)
+2025-04-25 12:23:18,626 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:23:18,626 - data.collectors.market_data - ERROR - All attempts failed for BNB/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:23:18,626 - data.collectors.market_data - WARNING - Using synthetic data for BNB/USDT (4h)
+2025-04-25 12:23:18,630 - data.collectors.market_data - INFO - Loaded 501 candles for BNB/USDT (4h)
+2025-04-25 12:23:18,630 - data.collectors.market_data - INFO - Loading data for BNB/USDT (1d)
+2025-04-25 12:23:18,636 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BNB/USDT (1d)
+2025-04-25 12:23:30,658 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:23:30,658 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:23:35,670 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BNB/USDT (1d)
+2025-04-25 12:23:35,683 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:23:35,683 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:23:45,701 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BNB/USDT (1d)
+2025-04-25 12:24:15,752 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:24:15,752 - data.collectors.market_data - ERROR - All attempts failed for BNB/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:24:15,752 - data.collectors.market_data - WARNING - Using synthetic data for BNB/USDT (1d)
+2025-04-25 12:24:15,756 - data.collectors.market_data - INFO - Loaded 501 candles for BNB/USDT (1d)
+2025-04-25 12:24:15,756 - data.collectors.market_data - INFO - Loading data for AVAX/USDT (1h)
+2025-04-25 12:24:15,762 - data.collectors.market_data - INFO - Attempt 1: Fetching data for AVAX/USDT (1h)
+2025-04-25 12:24:27,791 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:24:27,791 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:24:32,807 - data.collectors.market_data - INFO - Attempt 2: Fetching data for AVAX/USDT (1h)
+2025-04-25 12:24:44,831 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:24:44,832 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:24:54,850 - data.collectors.market_data - INFO - Attempt 3: Fetching data for AVAX/USDT (1h)
+2025-04-25 12:25:02,120 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:25:02,120 - data.collectors.market_data - ERROR - All attempts failed for AVAX/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:25:02,120 - data.collectors.market_data - WARNING - Using synthetic data for AVAX/USDT (1h)
+2025-04-25 12:25:02,124 - data.collectors.market_data - INFO - Loaded 501 candles for AVAX/USDT (1h)
+2025-04-25 12:25:02,125 - data.collectors.market_data - INFO - Loading data for AVAX/USDT (4h)
+2025-04-25 12:25:02,131 - data.collectors.market_data - INFO - Attempt 1: Fetching data for AVAX/USDT (4h)
+2025-04-25 12:25:32,172 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:25:32,172 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:25:37,186 - data.collectors.market_data - INFO - Attempt 2: Fetching data for AVAX/USDT (4h)
+2025-04-25 12:25:49,206 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:25:49,207 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:25:59,220 - data.collectors.market_data - INFO - Attempt 3: Fetching data for AVAX/USDT (4h)
+2025-04-25 12:26:11,235 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:26:11,235 - data.collectors.market_data - ERROR - All attempts failed for AVAX/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:26:11,235 - data.collectors.market_data - WARNING - Using synthetic data for AVAX/USDT (4h)
+2025-04-25 12:26:11,239 - data.collectors.market_data - INFO - Loaded 501 candles for AVAX/USDT (4h)
+2025-04-25 12:26:11,239 - data.collectors.market_data - INFO - Loading data for AVAX/USDT (1d)
+2025-04-25 12:26:11,245 - data.collectors.market_data - INFO - Attempt 1: Fetching data for AVAX/USDT (1d)
+2025-04-25 12:26:11,288 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:26:11,288 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 12:26:16,302 - data.collectors.market_data - INFO - Attempt 2: Fetching data for AVAX/USDT (1d)
+2025-04-25 12:26:46,358 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:26:46,359 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 12:26:56,377 - data.collectors.market_data - INFO - Attempt 3: Fetching data for AVAX/USDT (1d)
+2025-04-25 12:27:26,420 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:27:26,421 - data.collectors.market_data - ERROR - All attempts failed for AVAX/USDT (1d): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 12:27:26,421 - data.collectors.market_data - WARNING - Using synthetic data for AVAX/USDT (1d)
+2025-04-25 12:27:26,426 - data.collectors.market_data - INFO - Loaded 501 candles for AVAX/USDT (1d)
+2025-04-25 12:27:26,429 - backtesting.backtester - INFO - Found 181 trading dates in the backtest period
+2025-04-25 12:27:26,474 - backtesting.backtester - INFO - Backtest progress: 1/181 days processed
+2025-04-25 12:27:26,474 - backtesting.backtester - INFO - Current date: 2024-10-27, Portfolio value: $100.00
+2025-04-25 12:27:26,760 - execution.portfolio_manager - INFO - BUY 0.000310 BTC/USDT @ $32233.00 = $10.00
+2025-04-25 12:27:26,760 - execution.portfolio_manager - INFO - BUY 0.004654 ETH/USDT @ $2148.87 = $10.00
+2025-04-25 12:27:26,760 - execution.portfolio_manager - INFO - BUY 0.093072 SOL/USDT @ $107.44 = $10.00
+2025-04-25 12:27:26,760 - execution.portfolio_manager - INFO - BUY 0.093072 BNB/USDT @ $107.44 = $10.00
+2025-04-25 12:27:26,760 - execution.portfolio_manager - INFO - BUY 0.093072 AVAX/USDT @ $107.44 = $10.00
+2025-04-25 12:27:27,369 - backtesting.backtester - INFO - Backtest progress: 21/181 days processed
+2025-04-25 12:27:27,369 - backtesting.backtester - INFO - Current date: 2024-11-16, Portfolio value: $101.24
+2025-04-25 12:27:27,929 - execution.portfolio_manager - INFO - SELL 0.000310 BTC/USDT @ $31056.64 = $9.64
+2025-04-25 12:27:27,929 - execution.portfolio_manager - INFO - SELL 0.004654 ETH/USDT @ $2070.44 = $9.64
+2025-04-25 12:27:27,929 - execution.portfolio_manager - INFO - SELL 0.093072 SOL/USDT @ $103.52 = $9.64
+2025-04-25 12:27:27,929 - execution.portfolio_manager - INFO - SELL 0.093072 BNB/USDT @ $103.52 = $9.64
+2025-04-25 12:27:27,929 - execution.portfolio_manager - INFO - SELL 0.093072 AVAX/USDT @ $103.52 = $9.64
+2025-04-25 12:27:28,248 - backtesting.backtester - INFO - Backtest progress: 41/181 days processed
+2025-04-25 12:27:28,248 - backtesting.backtester - INFO - Current date: 2024-12-06, Portfolio value: $98.18
+2025-04-25 12:27:28,586 - execution.portfolio_manager - INFO - BUY 0.000311 BTC/USDT @ $32153.31 = $10.00
+2025-04-25 12:27:28,586 - execution.portfolio_manager - INFO - BUY 0.004665 ETH/USDT @ $2143.55 = $10.00
+2025-04-25 12:27:28,587 - execution.portfolio_manager - INFO - BUY 0.093303 SOL/USDT @ $107.18 = $10.00
+2025-04-25 12:27:28,587 - execution.portfolio_manager - INFO - BUY 0.093303 BNB/USDT @ $107.18 = $10.00
+2025-04-25 12:27:28,587 - execution.portfolio_manager - INFO - BUY 0.093303 AVAX/USDT @ $107.18 = $10.00
+2025-04-25 12:27:29,114 - backtesting.backtester - INFO - Backtest progress: 61/181 days processed
+2025-04-25 12:27:29,114 - backtesting.backtester - INFO - Current date: 2024-12-26, Portfolio value: $104.64
+2025-04-25 12:27:29,950 - backtesting.backtester - INFO - Backtest progress: 81/181 days processed
+2025-04-25 12:27:29,950 - backtesting.backtester - INFO - Current date: 2025-01-15, Portfolio value: $104.05
+2025-04-25 12:27:30,319 - execution.portfolio_manager - INFO - SELL 0.000311 BTC/USDT @ $33798.50 = $10.51
+2025-04-25 12:27:30,319 - execution.portfolio_manager - INFO - SELL 0.004665 ETH/USDT @ $2253.23 = $10.51
+2025-04-25 12:27:30,319 - execution.portfolio_manager - INFO - SELL 0.093303 SOL/USDT @ $112.66 = $10.51
+2025-04-25 12:27:30,319 - execution.portfolio_manager - INFO - SELL 0.093303 BNB/USDT @ $112.66 = $10.51
+2025-04-25 12:27:30,319 - execution.portfolio_manager - INFO - SELL 0.093303 AVAX/USDT @ $112.66 = $10.51
+2025-04-25 12:27:30,404 - execution.portfolio_manager - INFO - BUY 0.000291 BTC/USDT @ $34637.52 = $10.07
+2025-04-25 12:27:30,404 - execution.portfolio_manager - INFO - BUY 0.004331 ETH/USDT @ $2309.17 = $10.00
+2025-04-25 12:27:30,404 - execution.portfolio_manager - INFO - BUY 0.086611 SOL/USDT @ $115.46 = $10.00
+2025-04-25 12:27:30,404 - execution.portfolio_manager - INFO - BUY 0.086611 BNB/USDT @ $115.46 = $10.00
+2025-04-25 12:27:30,404 - execution.portfolio_manager - INFO - BUY 0.086611 AVAX/USDT @ $115.46 = $10.00
+2025-04-25 12:27:30,447 - execution.portfolio_manager - INFO - SELL 0.000291 BTC/USDT @ $33867.12 = $9.85
+2025-04-25 12:27:30,447 - execution.portfolio_manager - INFO - SELL 0.004331 ETH/USDT @ $2257.81 = $9.78
+2025-04-25 12:27:30,447 - execution.portfolio_manager - INFO - SELL 0.086611 SOL/USDT @ $112.89 = $9.78
+2025-04-25 12:27:30,447 - execution.portfolio_manager - INFO - SELL 0.086611 BNB/USDT @ $112.89 = $9.78
+2025-04-25 12:27:30,447 - execution.portfolio_manager - INFO - SELL 0.086611 AVAX/USDT @ $112.89 = $9.78
+2025-04-25 12:27:30,817 - execution.portfolio_manager - INFO - BUY 0.000283 BTC/USDT @ $35371.80 = $10.00
+2025-04-25 12:27:30,817 - execution.portfolio_manager - INFO - BUY 0.004241 ETH/USDT @ $2358.12 = $10.00
+2025-04-25 12:27:30,817 - execution.portfolio_manager - INFO - BUY 0.084813 SOL/USDT @ $117.91 = $10.00
+2025-04-25 12:27:30,817 - execution.portfolio_manager - INFO - BUY 0.084813 BNB/USDT @ $117.91 = $10.00
+2025-04-25 12:27:30,817 - execution.portfolio_manager - INFO - BUY 0.084813 AVAX/USDT @ $117.91 = $10.00
+2025-04-25 12:27:30,901 - backtesting.backtester - INFO - Backtest progress: 101/181 days processed
+2025-04-25 12:27:30,901 - backtesting.backtester - INFO - Current date: 2025-02-04, Portfolio value: $90.84
+2025-04-25 12:27:32,539 - backtesting.backtester - INFO - Backtest progress: 121/181 days processed
+2025-04-25 12:27:32,539 - backtesting.backtester - INFO - Current date: 2025-02-24, Portfolio value: $83.64
+2025-04-25 12:27:32,972 - execution.portfolio_manager - INFO - SELL 0.000283 BTC/USDT @ $35246.84 = $9.96
+2025-04-25 12:27:32,972 - execution.portfolio_manager - INFO - SELL 0.004241 ETH/USDT @ $2349.79 = $9.96
+2025-04-25 12:27:32,972 - execution.portfolio_manager - INFO - SELL 0.084813 SOL/USDT @ $117.49 = $9.96
+2025-04-25 12:27:32,972 - execution.portfolio_manager - INFO - SELL 0.084813 BNB/USDT @ $117.49 = $9.96
+2025-04-25 12:27:32,972 - execution.portfolio_manager - INFO - SELL 0.084813 AVAX/USDT @ $117.49 = $9.96
+2025-04-25 12:27:33,542 - execution.portfolio_manager - INFO - BUY 0.000375 BTC/USDT @ $26676.67 = $10.00
+2025-04-25 12:27:33,542 - execution.portfolio_manager - INFO - BUY 0.005623 ETH/USDT @ $1778.44 = $10.00
+2025-04-25 12:27:33,542 - execution.portfolio_manager - INFO - BUY 0.112458 SOL/USDT @ $88.92 = $10.00
+2025-04-25 12:27:33,542 - execution.portfolio_manager - INFO - BUY 0.112458 BNB/USDT @ $88.92 = $10.00
+2025-04-25 12:27:33,542 - execution.portfolio_manager - INFO - BUY 0.112458 AVAX/USDT @ $88.92 = $10.00
+2025-04-25 12:27:34,130 - execution.portfolio_manager - INFO - SELL 0.000375 BTC/USDT @ $28900.68 = $10.83
+2025-04-25 12:27:34,130 - execution.portfolio_manager - INFO - SELL 0.005623 ETH/USDT @ $1926.71 = $10.83
+2025-04-25 12:27:34,130 - execution.portfolio_manager - INFO - SELL 0.112458 SOL/USDT @ $96.34 = $10.83
+2025-04-25 12:27:34,130 - execution.portfolio_manager - INFO - SELL 0.112458 BNB/USDT @ $96.34 = $10.83
+2025-04-25 12:27:34,130 - execution.portfolio_manager - INFO - SELL 0.112458 AVAX/USDT @ $96.34 = $10.83
+2025-04-25 12:27:34,220 - execution.portfolio_manager - INFO - BUY 0.000335 BTC/USDT @ $30894.59 = $10.36
+2025-04-25 12:27:34,221 - execution.portfolio_manager - INFO - BUY 0.004855 ETH/USDT @ $2059.64 = $10.00
+2025-04-25 12:27:34,221 - execution.portfolio_manager - INFO - BUY 0.097104 SOL/USDT @ $102.98 = $10.00
+2025-04-25 12:27:34,221 - execution.portfolio_manager - INFO - BUY 0.097104 BNB/USDT @ $102.98 = $10.00
+2025-04-25 12:27:34,221 - execution.portfolio_manager - INFO - BUY 0.097104 AVAX/USDT @ $102.98 = $10.00
+2025-04-25 12:27:34,221 - backtesting.backtester - INFO - Backtest progress: 141/181 days processed
+2025-04-25 12:27:34,221 - backtesting.backtester - INFO - Current date: 2025-03-16, Portfolio value: $103.61
+2025-04-25 12:27:34,303 - execution.portfolio_manager - INFO - SELL 0.000335 BTC/USDT @ $32983.71 = $11.06
+2025-04-25 12:27:34,303 - execution.portfolio_manager - INFO - SELL 0.004855 ETH/USDT @ $2198.91 = $10.68
+2025-04-25 12:27:34,303 - execution.portfolio_manager - INFO - SELL 0.097104 SOL/USDT @ $109.95 = $10.68
+2025-04-25 12:27:34,303 - execution.portfolio_manager - INFO - SELL 0.097104 BNB/USDT @ $109.95 = $10.68
+2025-04-25 12:27:34,303 - execution.portfolio_manager - INFO - SELL 0.097104 AVAX/USDT @ $109.95 = $10.68
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - BUY 0.000369 BTC/USDT @ $28987.30 = $10.70
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - SELL 0.000369 BTC/USDT @ $33373.81 = $12.32
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - BUY 0.005622 ETH/USDT @ $1932.49 = $10.86
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - SELL 0.005622 ETH/USDT @ $2224.92 = $12.51
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - BUY 0.114133 SOL/USDT @ $96.62 = $11.03
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - SELL 0.114133 SOL/USDT @ $111.25 = $12.70
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - BUY 0.115860 BNB/USDT @ $96.62 = $11.19
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - SELL 0.115860 BNB/USDT @ $111.25 = $12.89
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - BUY 0.117614 AVAX/USDT @ $96.62 = $11.36
+2025-04-25 12:27:34,876 - execution.portfolio_manager - INFO - SELL 0.117614 AVAX/USDT @ $111.25 = $13.08
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - BUY 0.000391 BTC/USDT @ $29531.89 = $11.54
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - SELL 0.000391 BTC/USDT @ $33021.59 = $12.90
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - BUY 0.005929 ETH/USDT @ $1968.79 = $11.67
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - SELL 0.005929 ETH/USDT @ $2201.44 = $13.05
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - BUY 0.119978 SOL/USDT @ $98.44 = $11.81
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - SELL 0.119978 SOL/USDT @ $110.07 = $13.21
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - BUY 0.121396 BNB/USDT @ $98.44 = $11.95
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - SELL 0.121396 BNB/USDT @ $110.07 = $13.36
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - BUY 0.122830 AVAX/USDT @ $98.44 = $12.09
+2025-04-25 12:27:34,955 - execution.portfolio_manager - INFO - SELL 0.122830 AVAX/USDT @ $110.07 = $13.52
+2025-04-25 12:27:35,195 - execution.portfolio_manager - INFO - BUY 0.000361 BTC/USDT @ $33935.74 = $12.23
+2025-04-25 12:27:35,195 - execution.portfolio_manager - INFO - SELL 0.000361 BTC/USDT @ $31003.67 = $11.18
+2025-04-25 12:27:35,195 - execution.portfolio_manager - INFO - BUY 0.005361 ETH/USDT @ $2262.38 = $12.13
+2025-04-25 12:27:35,195 - execution.portfolio_manager - INFO - SELL 0.005361 ETH/USDT @ $2066.91 = $11.08
+2025-04-25 12:27:35,195 - execution.portfolio_manager - INFO - BUY 0.106293 SOL/USDT @ $113.12 = $12.02
+2025-04-25 12:27:35,195 - execution.portfolio_manager - INFO - SELL 0.106293 SOL/USDT @ $103.35 = $10.98
+2025-04-25 12:27:35,195 - execution.portfolio_manager - INFO - BUY 0.105374 BNB/USDT @ $113.12 = $11.92
+2025-04-25 12:27:35,195 - execution.portfolio_manager - INFO - SELL 0.105374 BNB/USDT @ $103.35 = $10.89
+2025-04-25 12:27:35,195 - execution.portfolio_manager - INFO - BUY 0.104464 AVAX/USDT @ $113.12 = $11.82
+2025-04-25 12:27:35,196 - execution.portfolio_manager - INFO - SELL 0.104464 AVAX/USDT @ $103.35 = $10.80
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - BUY 0.000345 BTC/USDT @ $33998.65 = $11.71
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - SELL 0.000345 BTC/USDT @ $30078.24 = $10.36
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - BUY 0.005109 ETH/USDT @ $2266.58 = $11.58
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - SELL 0.005109 ETH/USDT @ $2005.22 = $10.24
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - BUY 0.100999 SOL/USDT @ $113.33 = $11.45
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - SELL 0.100999 SOL/USDT @ $100.26 = $10.13
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - BUY 0.099835 BNB/USDT @ $113.33 = $11.31
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - SELL 0.099835 BNB/USDT @ $100.26 = $10.01
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - BUY 0.098684 AVAX/USDT @ $113.33 = $11.18
+2025-04-25 12:27:35,276 - execution.portfolio_manager - INFO - SELL 0.098684 AVAX/USDT @ $100.26 = $9.89
+2025-04-25 12:27:35,361 - execution.portfolio_manager - INFO - BUY 0.000340 BTC/USDT @ $32491.60 = $11.05
+2025-04-25 12:27:35,362 - execution.portfolio_manager - INFO - SELL 0.000340 BTC/USDT @ $30911.84 = $10.52
+2025-04-25 12:27:35,362 - execution.portfolio_manager - INFO - BUY 0.005079 ETH/USDT @ $2166.11 = $11.00
+2025-04-25 12:27:35,362 - execution.portfolio_manager - INFO - SELL 0.005079 ETH/USDT @ $2060.79 = $10.47
+2025-04-25 12:27:35,362 - execution.portfolio_manager - INFO - BUY 0.101080 SOL/USDT @ $108.31 = $10.95
+2025-04-25 12:27:35,362 - execution.portfolio_manager - INFO - SELL 0.101080 SOL/USDT @ $103.04 = $10.42
+2025-04-25 12:27:35,362 - execution.portfolio_manager - INFO - BUY 0.100588 BNB/USDT @ $108.31 = $10.89
+2025-04-25 12:27:35,362 - execution.portfolio_manager - INFO - SELL 0.100588 BNB/USDT @ $103.04 = $10.36
+2025-04-25 12:27:35,362 - execution.portfolio_manager - INFO - BUY 0.100099 AVAX/USDT @ $108.31 = $10.84
+2025-04-25 12:27:35,362 - execution.portfolio_manager - INFO - SELL 0.100099 AVAX/USDT @ $103.04 = $10.31
+2025-04-25 12:27:35,444 - execution.portfolio_manager - INFO - BUY 0.000344 BTC/USDT @ $31402.09 = $10.79
+2025-04-25 12:27:35,444 - execution.portfolio_manager - INFO - SELL 0.000344 BTC/USDT @ $31945.74 = $10.98
+2025-04-25 12:27:35,444 - execution.portfolio_manager - INFO - BUY 0.005162 ETH/USDT @ $2093.47 = $10.81
+2025-04-25 12:27:35,444 - execution.portfolio_manager - INFO - SELL 0.005162 ETH/USDT @ $2129.72 = $10.99
+2025-04-25 12:27:35,444 - execution.portfolio_manager - INFO - BUY 0.103426 SOL/USDT @ $104.67 = $10.83
+2025-04-25 12:27:35,445 - execution.portfolio_manager - INFO - SELL 0.103426 SOL/USDT @ $106.49 = $11.01
+2025-04-25 12:27:35,445 - execution.portfolio_manager - INFO - BUY 0.103605 BNB/USDT @ $104.67 = $10.84
+2025-04-25 12:27:35,445 - execution.portfolio_manager - INFO - SELL 0.103605 BNB/USDT @ $106.49 = $11.03
+2025-04-25 12:27:35,445 - execution.portfolio_manager - INFO - BUY 0.103784 AVAX/USDT @ $104.67 = $10.86
+2025-04-25 12:27:35,445 - execution.portfolio_manager - INFO - SELL 0.103784 AVAX/USDT @ $106.49 = $11.05
+2025-04-25 12:27:35,783 - execution.portfolio_manager - INFO - BUY 0.000343 BTC/USDT @ $31737.50 = $10.88
+2025-04-25 12:27:35,783 - execution.portfolio_manager - INFO - SELL 0.000343 BTC/USDT @ $34411.53 = $11.80
+2025-04-25 12:27:35,783 - execution.portfolio_manager - INFO - BUY 0.005187 ETH/USDT @ $2115.83 = $10.97
+2025-04-25 12:27:35,783 - execution.portfolio_manager - INFO - SELL 0.005187 ETH/USDT @ $2294.10 = $11.90
+2025-04-25 12:27:35,784 - execution.portfolio_manager - INFO - BUY 0.104606 SOL/USDT @ $105.79 = $11.07
+2025-04-25 12:27:35,784 - execution.portfolio_manager - INFO - SELL 0.104606 SOL/USDT @ $114.71 = $12.00
+2025-04-25 12:27:35,784 - execution.portfolio_manager - INFO - BUY 0.105487 BNB/USDT @ $105.79 = $11.16
+2025-04-25 12:27:35,784 - execution.portfolio_manager - INFO - SELL 0.105487 BNB/USDT @ $114.71 = $12.10
+2025-04-25 12:27:35,784 - execution.portfolio_manager - INFO - BUY 0.106376 AVAX/USDT @ $105.79 = $11.25
+2025-04-25 12:27:35,784 - execution.portfolio_manager - INFO - SELL 0.106376 AVAX/USDT @ $114.71 = $12.20
+2025-04-25 12:27:35,898 - backtesting.backtester - INFO - Backtest progress: 161/181 days processed
+2025-04-25 12:27:35,899 - backtesting.backtester - INFO - Current date: 2025-04-05, Portfolio value: $113.49
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - BUY 0.000336 BTC/USDT @ $33813.73 = $11.35
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - SELL 0.000336 BTC/USDT @ $35100.84 = $11.78
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - BUY 0.005053 ETH/USDT @ $2254.25 = $11.39
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - SELL 0.005053 ETH/USDT @ $2340.06 = $11.83
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - BUY 0.101454 SOL/USDT @ $112.71 = $11.44
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - SELL 0.101454 SOL/USDT @ $117.00 = $11.87
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - BUY 0.101840 BNB/USDT @ $112.71 = $11.48
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - SELL 0.101840 BNB/USDT @ $117.00 = $11.92
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - BUY 0.102228 AVAX/USDT @ $112.71 = $11.52
+2025-04-25 12:27:36,020 - execution.portfolio_manager - INFO - SELL 0.102228 AVAX/USDT @ $117.00 = $11.96
+2025-04-25 12:27:36,143 - execution.portfolio_manager - INFO - BUY 0.000328 BTC/USDT @ $35217.54 = $11.57
+2025-04-25 12:27:36,143 - execution.portfolio_manager - INFO - BUY 0.004434 ETH/USDT @ $2347.84 = $10.41
+2025-04-25 12:27:36,143 - execution.portfolio_manager - INFO - BUY 0.085185 SOL/USDT @ $117.39 = $10.00
+2025-04-25 12:27:36,143 - execution.portfolio_manager - INFO - BUY 0.085185 BNB/USDT @ $117.39 = $10.00
+2025-04-25 12:27:36,143 - execution.portfolio_manager - INFO - BUY 0.085185 AVAX/USDT @ $117.39 = $10.00
+2025-04-25 12:27:36,642 - execution.portfolio_manager - INFO - SELL 0.000328 BTC/USDT @ $32843.78 = $10.79
+2025-04-25 12:27:36,642 - execution.portfolio_manager - INFO - SELL 0.004434 ETH/USDT @ $2189.59 = $9.71
+2025-04-25 12:27:36,642 - execution.portfolio_manager - INFO - SELL 0.085185 SOL/USDT @ $109.48 = $9.33
+2025-04-25 12:27:36,642 - execution.portfolio_manager - INFO - SELL 0.085185 BNB/USDT @ $109.48 = $9.33
+2025-04-25 12:27:36,642 - execution.portfolio_manager - INFO - SELL 0.085185 AVAX/USDT @ $109.48 = $9.33
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - BUY 0.000317 BTC/USDT @ $35371.80 = $11.22
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - SELL 0.000317 BTC/USDT @ $31644.07 = $10.03
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - BUY 0.004706 ETH/USDT @ $2358.12 = $11.10
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - SELL 0.004706 ETH/USDT @ $2109.60 = $9.93
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - BUY 0.093131 SOL/USDT @ $117.91 = $10.98
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - SELL 0.093131 SOL/USDT @ $105.48 = $9.82
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - BUY 0.092149 BNB/USDT @ $117.91 = $10.86
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - SELL 0.092149 BNB/USDT @ $105.48 = $9.72
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - BUY 0.091178 AVAX/USDT @ $117.91 = $10.75
+2025-04-25 12:27:36,766 - execution.portfolio_manager - INFO - SELL 0.091178 AVAX/USDT @ $105.48 = $9.62
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - BUY 0.000356 BTC/USDT @ $29907.56 = $10.64
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - SELL 0.000356 BTC/USDT @ $32029.67 = $11.39
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - BUY 0.005373 ETH/USDT @ $1993.84 = $10.71
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - SELL 0.005373 ETH/USDT @ $2135.31 = $11.47
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - BUY 0.108220 SOL/USDT @ $99.69 = $10.79
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - SELL 0.108220 SOL/USDT @ $106.77 = $11.55
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - BUY 0.108988 BNB/USDT @ $99.69 = $10.87
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - SELL 0.108988 BNB/USDT @ $106.77 = $11.64
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - BUY 0.109761 AVAX/USDT @ $99.69 = $10.94
+2025-04-25 12:27:37,004 - execution.portfolio_manager - INFO - SELL 0.109761 AVAX/USDT @ $106.77 = $11.72
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - BUY 0.000276 BTC/USDT @ $39938.86 = $11.02
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - SELL 0.000276 BTC/USDT @ $32599.46 = $8.99
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - BUY 0.004063 ETH/USDT @ $2662.59 = $10.82
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - SELL 0.004063 ETH/USDT @ $2173.30 = $8.83
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - BUY 0.079762 SOL/USDT @ $133.13 = $10.62
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - SELL 0.079762 SOL/USDT @ $108.66 = $8.67
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - BUY 0.078296 BNB/USDT @ $133.13 = $10.42
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - SELL 0.078296 BNB/USDT @ $108.66 = $8.51
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - BUY 0.076857 AVAX/USDT @ $133.13 = $10.23
+2025-04-25 12:27:37,125 - execution.portfolio_manager - INFO - SELL 0.076857 AVAX/USDT @ $108.66 = $8.35
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - BUY 0.000277 BTC/USDT @ $36243.05 = $10.04
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - SELL 0.000277 BTC/USDT @ $32594.26 = $9.03
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - BUY 0.004139 ETH/USDT @ $2416.20 = $10.00
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - SELL 0.004139 ETH/USDT @ $2172.95 = $8.99
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - BUY 0.082774 SOL/USDT @ $120.81 = $10.00
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - SELL 0.082774 SOL/USDT @ $108.65 = $8.99
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - BUY 0.082774 BNB/USDT @ $120.81 = $10.00
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - SELL 0.082774 BNB/USDT @ $108.65 = $8.99
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - BUY 0.082774 AVAX/USDT @ $120.81 = $10.00
+2025-04-25 12:27:37,247 - execution.portfolio_manager - INFO - SELL 0.082774 AVAX/USDT @ $108.65 = $8.99
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - BUY 0.000308 BTC/USDT @ $32479.72 = $10.00
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - SELL 0.000308 BTC/USDT @ $32983.71 = $10.16
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - BUY 0.004618 ETH/USDT @ $2165.31 = $10.00
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - SELL 0.004618 ETH/USDT @ $2198.91 = $10.16
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - BUY 0.092365 SOL/USDT @ $108.27 = $10.00
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - SELL 0.092365 SOL/USDT @ $109.95 = $10.16
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - BUY 0.092365 BNB/USDT @ $108.27 = $10.00
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - SELL 0.092365 BNB/USDT @ $109.95 = $10.16
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - BUY 0.092365 AVAX/USDT @ $108.27 = $10.00
+2025-04-25 12:27:37,642 - execution.portfolio_manager - INFO - SELL 0.092365 AVAX/USDT @ $109.95 = $10.16
+2025-04-25 12:27:37,770 - execution.portfolio_manager - INFO - BUY 0.000311 BTC/USDT @ $32153.31 = $10.00
+2025-04-25 12:27:37,770 - execution.portfolio_manager - INFO - SELL 0.000311 BTC/USDT @ $32872.01 = $10.22
+2025-04-25 12:27:37,770 - execution.portfolio_manager - INFO - BUY 0.000293 BTC/USDT @ $34073.47 = $10.00
+2025-04-25 12:27:37,770 - execution.portfolio_manager - INFO - BUY 0.004665 ETH/USDT @ $2143.55 = $10.00
+2025-04-25 12:27:37,771 - execution.portfolio_manager - INFO - SELL 0.004665 ETH/USDT @ $2191.47 = $10.22
+2025-04-25 12:27:37,771 - execution.portfolio_manager - INFO - BUY 0.004402 ETH/USDT @ $2271.56 = $10.00
+2025-04-25 12:27:37,771 - execution.portfolio_manager - INFO - BUY 0.093303 SOL/USDT @ $107.18 = $10.00
+2025-04-25 12:27:37,771 - execution.portfolio_manager - INFO - SELL 0.093303 SOL/USDT @ $109.57 = $10.22
+2025-04-25 12:27:37,771 - execution.portfolio_manager - INFO - BUY 0.088045 SOL/USDT @ $113.58 = $10.00
+2025-04-25 12:27:37,771 - execution.portfolio_manager - INFO - BUY 0.093303 BNB/USDT @ $107.18 = $10.00
+2025-04-25 12:27:37,771 - execution.portfolio_manager - INFO - SELL 0.093303 BNB/USDT @ $109.57 = $10.22
+2025-04-25 12:27:37,772 - execution.portfolio_manager - INFO - BUY 0.088045 BNB/USDT @ $113.58 = $10.00
+2025-04-25 12:27:37,772 - execution.portfolio_manager - INFO - BUY 0.093303 AVAX/USDT @ $107.18 = $10.00
+2025-04-25 12:27:37,772 - execution.portfolio_manager - INFO - SELL 0.093303 AVAX/USDT @ $109.57 = $10.22
+2025-04-25 12:27:37,772 - execution.portfolio_manager - INFO - BUY 0.088045 AVAX/USDT @ $113.58 = $10.00
+2025-04-25 12:27:37,900 - execution.portfolio_manager - INFO - SELL 0.000293 BTC/USDT @ $30078.24 = $8.83
+2025-04-25 12:27:37,901 - execution.portfolio_manager - INFO - BUY 0.000290 BTC/USDT @ $34442.71 = $10.00
+2025-04-25 12:27:37,901 - execution.portfolio_manager - INFO - SELL 0.004402 ETH/USDT @ $2005.22 = $8.83
+2025-04-25 12:27:37,901 - execution.portfolio_manager - INFO - BUY 0.004355 ETH/USDT @ $2296.18 = $10.00
+2025-04-25 12:27:37,901 - execution.portfolio_manager - INFO - SELL 0.088045 SOL/USDT @ $100.26 = $8.83
+2025-04-25 12:27:37,901 - execution.portfolio_manager - INFO - BUY 0.087101 SOL/USDT @ $114.81 = $10.00
+2025-04-25 12:27:37,901 - execution.portfolio_manager - INFO - SELL 0.088045 BNB/USDT @ $100.26 = $8.83
+2025-04-25 12:27:37,901 - execution.portfolio_manager - INFO - BUY 0.087101 BNB/USDT @ $114.81 = $10.00
+2025-04-25 12:27:37,901 - execution.portfolio_manager - INFO - SELL 0.088045 AVAX/USDT @ $100.26 = $8.83
+2025-04-25 12:27:37,901 - execution.portfolio_manager - INFO - BUY 0.087101 AVAX/USDT @ $114.81 = $10.00
+2025-04-25 12:27:38,039 - execution.portfolio_manager - INFO - SELL 0.000290 BTC/USDT @ $33414.58 = $9.70
+2025-04-25 12:27:38,039 - execution.portfolio_manager - INFO - BUY 0.000296 BTC/USDT @ $33735.56 = $10.00
+2025-04-25 12:27:38,039 - execution.portfolio_manager - INFO - SELL 0.004355 ETH/USDT @ $2227.64 = $9.70
+2025-04-25 12:27:38,040 - execution.portfolio_manager - INFO - BUY 0.004446 ETH/USDT @ $2249.04 = $10.00
+2025-04-25 12:27:38,040 - execution.portfolio_manager - INFO - SELL 0.087101 SOL/USDT @ $111.38 = $9.70
+2025-04-25 12:27:38,040 - execution.portfolio_manager - INFO - BUY 0.088927 SOL/USDT @ $112.45 = $10.00
+2025-04-25 12:27:38,040 - execution.portfolio_manager - INFO - SELL 0.087101 BNB/USDT @ $111.38 = $9.70
+2025-04-25 12:27:38,040 - execution.portfolio_manager - INFO - BUY 0.088927 BNB/USDT @ $112.45 = $10.00
+2025-04-25 12:27:38,040 - execution.portfolio_manager - INFO - SELL 0.087101 AVAX/USDT @ $111.38 = $9.70
+2025-04-25 12:27:38,040 - execution.portfolio_manager - INFO - BUY 0.088927 AVAX/USDT @ $112.45 = $10.00
+2025-04-25 12:27:38,366 - execution.portfolio_manager - INFO - SELL 0.000296 BTC/USDT @ $32687.87 = $9.69
+2025-04-25 12:27:38,366 - execution.portfolio_manager - INFO - BUY 0.000303 BTC/USDT @ $33023.96 = $10.00
+2025-04-25 12:27:38,366 - execution.portfolio_manager - INFO - SELL 0.004446 ETH/USDT @ $2179.19 = $9.69
+2025-04-25 12:27:38,367 - execution.portfolio_manager - INFO - BUY 0.004542 ETH/USDT @ $2201.60 = $10.00
+2025-04-25 12:27:38,367 - execution.portfolio_manager - INFO - SELL 0.088927 SOL/USDT @ $108.96 = $9.69
+2025-04-25 12:27:38,367 - execution.portfolio_manager - INFO - BUY 0.090843 SOL/USDT @ $110.08 = $10.00
+2025-04-25 12:27:38,367 - execution.portfolio_manager - INFO - SELL 0.088927 BNB/USDT @ $108.96 = $9.69
+2025-04-25 12:27:38,367 - execution.portfolio_manager - INFO - BUY 0.090843 BNB/USDT @ $110.08 = $10.00
+2025-04-25 12:27:38,367 - execution.portfolio_manager - INFO - SELL 0.088927 AVAX/USDT @ $108.96 = $9.69
+2025-04-25 12:27:38,367 - execution.portfolio_manager - INFO - BUY 0.090843 AVAX/USDT @ $110.08 = $10.00
+2025-04-25 12:27:38,494 - execution.portfolio_manager - INFO - SELL 0.000303 BTC/USDT @ $30966.93 = $9.38
+2025-04-25 12:27:38,494 - execution.portfolio_manager - INFO - BUY 0.000296 BTC/USDT @ $33735.56 = $10.00
+2025-04-25 12:27:38,495 - execution.portfolio_manager - INFO - SELL 0.004542 ETH/USDT @ $2064.46 = $9.38
+2025-04-25 12:27:38,495 - execution.portfolio_manager - INFO - BUY 0.004446 ETH/USDT @ $2249.04 = $10.00
+2025-04-25 12:27:38,495 - execution.portfolio_manager - INFO - SELL 0.090843 SOL/USDT @ $103.22 = $9.38
+2025-04-25 12:27:38,495 - execution.portfolio_manager - INFO - BUY 0.088927 SOL/USDT @ $112.45 = $10.00
+2025-04-25 12:27:38,495 - execution.portfolio_manager - INFO - SELL 0.090843 BNB/USDT @ $103.22 = $9.38
+2025-04-25 12:27:38,495 - execution.portfolio_manager - INFO - BUY 0.088927 BNB/USDT @ $112.45 = $10.00
+2025-04-25 12:27:38,495 - execution.portfolio_manager - INFO - SELL 0.090843 AVAX/USDT @ $103.22 = $9.38
+2025-04-25 12:27:38,495 - execution.portfolio_manager - INFO - BUY 0.088927 AVAX/USDT @ $112.45 = $10.00
+2025-04-25 12:27:38,495 - backtesting.backtester - INFO - Backtest progress: 181/181 days processed
+2025-04-25 12:27:38,495 - backtesting.backtester - INFO - Current date: 2025-04-25, Portfolio value: $81.17
+2025-04-25 12:27:38,499 - crypto_bot - INFO - 
+Backtest Results:
+2025-04-25 12:27:38,499 - crypto_bot - INFO - Initial Portfolio: $100.00
+2025-04-25 12:27:38,499 - crypto_bot - INFO - Final Portfolio: $81.17
+2025-04-25 12:27:38,499 - crypto_bot - INFO - Total Return: -18.83%
+2025-04-25 12:27:38,499 - crypto_bot - INFO - Annual Return: -25.21%
+2025-04-25 12:27:38,499 - crypto_bot - INFO - Volatility: 44.83%
+2025-04-25 12:27:38,499 - crypto_bot - INFO - Sharpe Ratio: -0.61
+2025-04-25 12:27:38,499 - crypto_bot - INFO - Maximum Drawdown: 33.65%
+2025-04-25 12:27:38,499 - crypto_bot - INFO - Win Rate: 60.00%
+2025-04-25 12:27:38,499 - crypto_bot - INFO - Total Trades: 255

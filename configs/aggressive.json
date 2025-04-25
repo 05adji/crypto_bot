@@ -1,0 +1,68 @@
+{
+    "trading_pairs": ["BTC/USDT", "ETH/USDT", "SOL/USDT", "BNB/USDT", "AVAX/USDT"],
+    "timeframes": ["1h", "4h", "1d"],
+    "initial_capital": 100,
+    "max_position_size": 15,
+    "max_drawdown": 80,
+    "risk_per_trade": 1.5,
+    "api_keys": {
+        "binance": {
+            "api_key": "PGuinBxzQzVvYhXAQDdrSSIe8mQn2p3lcf0tZRvT66NGTrwe4PQ6cduvtLTvrFAG",
+            "api_secret": "BTcsbqZzBFl23KRNc8mrB5J3wO0vgfSkai3qcxKBzu3dkiTom4DAHtnhDaGeeMk7"
+        },
+        "twitter": {
+            "consumer_key": "YOUR_TWITTER_CONSUMER_KEY",
+            "consumer_secret": "YOUR_TWITTER_CONSUMER_SECRET",
+            "access_token": "YOUR_TWITTER_ACCESS_TOKEN",
+            "access_token_secret": "YOUR_TWITTER_ACCESS_TOKEN_SECRET"
+        },
+        "reddit": {
+            "client_id": "YOUR_REDDIT_CLIENT_ID",
+            "client_secret": "YOUR_REDDIT_CLIENT_SECRET",
+            "user_agent": "YOUR_REDDIT_USER_AGENT"
+        },
+        "news_api": {
+            "api_key": "YOUR_NEWS_API_KEY"
+        },
+        "fred": {
+            "api_key": "YOUR_FRED_API_KEY"
+        },
+        "etherscan": {
+            "api_key": "YOUR_ETHERSCAN_API_KEY"
+        }
+    },
+    "strategies": {
+        "lookback_periods": 60,
+        "moving_average": {
+            "fast_ma": "ema8",
+            "slow_ma": "ema21",
+            "lookback": 3,
+            "rsi_oversold": 35,
+            "rsi_overbought": 65
+        },
+        "pair_trading": {
+            "z_score_threshold": 2.0,
+            "lookback_periods": 90,
+            "half_life": 30,
+            "correlation_threshold": 0.7
+        },
+        "manipulation": {
+            "volume_spike_threshold": 3.0,
+            "price_spike_threshold": 0.1,
+            "bid_ask_imbalance_threshold": 3.0,
+            "wash_trade_threshold": 0.8
+        },
+        "macro": {
+            "indicators": ["DFF", "UNRATE", "CPIAUCSL", "T10Y2Y", "VIXCLS"],
+            "correlation_threshold": 0.3,
+            "update_frequency": 24
+        },
+        "risk": {
+            "stop_loss_pct": 10,
+            "take_profit_pct": 30
+        }
+    },
+    "backtesting": {
+        "lookback_periods": 500
+    }
+}

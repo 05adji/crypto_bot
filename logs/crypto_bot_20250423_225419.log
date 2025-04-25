@@ -1,0 +1,17 @@
+2025-04-23 22:54:19,958 - crypto_bot - INFO - Loading configuration...
+2025-04-23 22:54:19,958 - utils.config_loader - INFO - Configuration loaded successfully
+2025-04-23 22:54:19,958 - crypto_bot - INFO - Initializing data collector...
+2025-04-23 22:54:19,992 - data.collectors.market_data - ERROR - Exchange connection error: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1745423659965&recvWindow=10000&signature=e7168e457e5c6c8961238a7d88f7e354bfad4962b8dac03e5de0b8c6649ab88a
+2025-04-23 22:54:19,992 - crypto_bot - INFO - Fetching historical data...
+2025-04-23 22:54:19,992 - data.collectors.market_data - INFO - Loading data for BTC/USDT (1h)
+2025-04-23 22:54:30,017 - data.collectors.market_data - ERROR - Error fetching data for BTC/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 22:54:30,020 - data.collectors.market_data - WARNING - No data retrieved for BTC/USDT (1h)
+2025-04-23 22:54:30,020 - data.collectors.market_data - INFO - Loading data for BTC/USDT (4h)
+2025-04-23 22:54:40,065 - data.collectors.market_data - ERROR - Error fetching data for BTC/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 22:54:40,066 - data.collectors.market_data - WARNING - No data retrieved for BTC/USDT (4h)
+2025-04-23 22:54:40,066 - data.collectors.market_data - INFO - Loading data for ETH/USDT (1h)
+2025-04-23 22:54:50,109 - data.collectors.market_data - ERROR - Error fetching data for ETH/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 22:54:50,110 - data.collectors.market_data - WARNING - No data retrieved for ETH/USDT (1h)
+2025-04-23 22:54:50,110 - data.collectors.market_data - INFO - Loading data for ETH/USDT (4h)
+2025-04-23 22:55:00,159 - data.collectors.market_data - ERROR - Error fetching data for ETH/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 22:55:00,161 - data.collectors.market_data - WARNING - No data retrieved for ETH/USDT (4h)

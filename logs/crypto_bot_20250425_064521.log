@@ -1,0 +1,113 @@
+2025-04-25 06:45:21,101 - crypto_bot - INFO - Initializing trading bot with config: config/config.json
+2025-04-25 06:45:21,102 - utils.config_loader - INFO - Configuration loaded successfully
+2025-04-25 06:45:33,125 - data.collectors.market_data - ERROR - Exchange connection error: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1745538321112&recvWindow=10000&signature=2c3c25ea5dc9a08cf484eaba01fd04a1e3ef60eac5ec4b2dac14f0a7fa401394
+2025-04-25 06:45:33,126 - crypto_bot - INFO - Trading bot initialized successfully
+2025-04-25 06:45:33,126 - crypto_bot - INFO - Starting bot in BACKTEST mode for 90 days
+2025-04-25 06:45:33,126 - crypto_bot - INFO - Starting backtesting mode for last 90 days
+2025-04-25 06:45:33,126 - backtesting.backtester - INFO - Starting backtest...
+2025-04-25 06:45:33,126 - backtesting.backtester - INFO - Backtest period: 2025-01-25 to 2025-04-25
+2025-04-25 06:45:33,126 - execution.portfolio_manager - INFO - Portfolio reset to initial capital of $100
+2025-04-25 06:45:33,126 - backtesting.backtester - INFO - Loading historical data...
+2025-04-25 06:45:33,126 - data.collectors.market_data - INFO - Loading data for BTC/USDT (1h)
+2025-04-25 06:45:33,133 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (1h)
+2025-04-25 06:45:45,152 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:45:45,152 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 06:45:50,166 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (1h)
+2025-04-25 06:46:02,183 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:46:02,183 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 06:46:12,203 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (1h)
+2025-04-25 06:46:24,239 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:46:24,239 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:46:24,239 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (1h)
+2025-04-25 06:46:24,248 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (1h)
+2025-04-25 06:46:24,248 - data.collectors.market_data - INFO - Loading data for BTC/USDT (4h)
+2025-04-25 06:46:24,254 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (4h)
+2025-04-25 06:46:25,321 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:46:25,321 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 06:46:30,335 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (4h)
+2025-04-25 06:46:50,626 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:46:50,627 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 06:47:00,647 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (4h)
+2025-04-25 06:47:30,705 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:47:30,705 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:47:30,705 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (4h)
+2025-04-25 06:47:30,709 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (4h)
+2025-04-25 06:47:30,709 - data.collectors.market_data - INFO - Loading data for ETH/USDT (1h)
+2025-04-25 06:47:30,715 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (1h)
+2025-04-25 06:47:31,796 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:47:31,796 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 06:47:36,810 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (1h)
+2025-04-25 06:47:37,872 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:47:37,872 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 06:47:47,890 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (1h)
+2025-04-25 06:47:59,914 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:47:59,914 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:47:59,914 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (1h)
+2025-04-25 06:47:59,918 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (1h)
+2025-04-25 06:47:59,918 - data.collectors.market_data - INFO - Loading data for ETH/USDT (4h)
+2025-04-25 06:47:59,924 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (4h)
+2025-04-25 06:48:07,153 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:48:07,154 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-25 06:48:12,167 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (4h)
+2025-04-25 06:48:15,314 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:48:15,315 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-25 06:48:25,335 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (4h)
+2025-04-25 06:48:45,828 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:48:45,828 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-25 06:48:45,828 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (4h)
+2025-04-25 06:48:45,832 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (4h)
+2025-04-25 06:48:45,833 - backtesting.backtester - INFO - Found 85 trading dates in the backtest period
+2025-04-25 06:48:45,834 - backtesting.backtester - INFO - Backtest progress: 1/85 days processed
+2025-04-25 06:48:45,834 - backtesting.backtester - INFO - Current date: 2025-01-31, Portfolio value: $100.00
+2025-04-25 06:48:46,138 - backtesting.backtester - INFO - Backtest progress: 21/85 days processed
+2025-04-25 06:48:46,138 - backtesting.backtester - INFO - Current date: 2025-02-20, Portfolio value: $100.00
+2025-04-25 06:48:46,373 - execution.portfolio_manager - INFO - BUY 0.000379 BTC/USDT @ $26355.28 = $10.00
+2025-04-25 06:48:46,373 - execution.portfolio_manager - INFO - BUY 0.005691 ETH/USDT @ $1757.02 = $10.00
+2025-04-25 06:48:46,448 - backtesting.backtester - INFO - Backtest progress: 41/85 days processed
+2025-04-25 06:48:46,448 - backtesting.backtester - INFO - Current date: 2025-03-12, Portfolio value: $102.97
+2025-04-25 06:48:46,479 - execution.portfolio_manager - INFO - SELL 0.000379 BTC/USDT @ $28752.96 = $10.91
+2025-04-25 06:48:46,479 - execution.portfolio_manager - INFO - SELL 0.005691 ETH/USDT @ $1916.86 = $10.91
+2025-04-25 06:48:46,495 - execution.portfolio_manager - INFO - BUY 0.000332 BTC/USDT @ $30712.37 = $10.18
+2025-04-25 06:48:46,495 - execution.portfolio_manager - INFO - BUY 0.004884 ETH/USDT @ $2047.49 = $10.00
+2025-04-25 06:48:46,526 - execution.portfolio_manager - INFO - SELL 0.000332 BTC/USDT @ $27957.99 = $9.27
+2025-04-25 06:48:46,527 - execution.portfolio_manager - INFO - SELL 0.004884 ETH/USDT @ $1863.87 = $9.10
+2025-04-25 06:48:46,618 - execution.portfolio_manager - INFO - BUY 0.000350 BTC/USDT @ $28540.56 = $10.00
+2025-04-25 06:48:46,618 - execution.portfolio_manager - INFO - BUY 0.005256 ETH/USDT @ $1902.70 = $10.00
+2025-04-25 06:48:46,766 - execution.portfolio_manager - INFO - SELL 0.000350 BTC/USDT @ $31481.08 = $11.03
+2025-04-25 06:48:46,766 - execution.portfolio_manager - INFO - SELL 0.005256 ETH/USDT @ $2098.74 = $11.03
+2025-04-25 06:48:46,766 - backtesting.backtester - INFO - Backtest progress: 61/85 days processed
+2025-04-25 06:48:46,766 - backtesting.backtester - INFO - Current date: 2025-04-01, Portfolio value: $102.07
+2025-04-25 06:48:46,873 - execution.portfolio_manager - INFO - BUY 0.000310 BTC/USDT @ $32955.87 = $10.21
+2025-04-25 06:48:46,873 - execution.portfolio_manager - INFO - BUY 0.004552 ETH/USDT @ $2197.06 = $10.00
+2025-04-25 06:48:47,000 - execution.portfolio_manager - INFO - SELL 0.000310 BTC/USDT @ $33798.50 = $10.47
+2025-04-25 06:48:47,000 - execution.portfolio_manager - INFO - SELL 0.004552 ETH/USDT @ $2253.23 = $10.26
+2025-04-25 06:48:47,059 - execution.portfolio_manager - INFO - BUY 0.000278 BTC/USDT @ $36909.91 = $10.26
+2025-04-25 06:48:47,059 - execution.portfolio_manager - INFO - BUY 0.004064 ETH/USDT @ $2460.66 = $10.00
+2025-04-25 06:48:47,181 - execution.portfolio_manager - INFO - SELL 0.000278 BTC/USDT @ $27351.51 = $7.60
+2025-04-25 06:48:47,181 - execution.portfolio_manager - INFO - SELL 0.004064 ETH/USDT @ $1823.43 = $7.41
+2025-04-25 06:48:47,211 - execution.portfolio_manager - INFO - BUY 0.000354 BTC/USDT @ $28222.58 = $10.00
+2025-04-25 06:48:47,211 - execution.portfolio_manager - INFO - BUY 0.005315 ETH/USDT @ $1881.51 = $10.00
+2025-04-25 06:48:47,269 - execution.portfolio_manager - INFO - SELL 0.000354 BTC/USDT @ $32548.28 = $11.53
+2025-04-25 06:48:47,269 - execution.portfolio_manager - INFO - SELL 0.005315 ETH/USDT @ $2169.89 = $11.53
+2025-04-25 06:48:47,330 - execution.portfolio_manager - INFO - BUY 0.000286 BTC/USDT @ $35132.29 = $10.04
+2025-04-25 06:48:47,330 - execution.portfolio_manager - INFO - SELL 0.000286 BTC/USDT @ $31945.74 = $9.13
+2025-04-25 06:48:47,330 - execution.portfolio_manager - INFO - BUY 0.004270 ETH/USDT @ $2342.15 = $10.00
+2025-04-25 06:48:47,330 - execution.portfolio_manager - INFO - SELL 0.004270 ETH/USDT @ $2129.72 = $9.09
+2025-04-25 06:48:47,330 - backtesting.backtester - INFO - Backtest progress: 81/85 days processed
+2025-04-25 06:48:47,330 - backtesting.backtester - INFO - Current date: 2025-04-21, Portfolio value: $98.59
+2025-04-25 06:48:47,453 - execution.portfolio_manager - INFO - BUY 0.000303 BTC/USDT @ $33023.96 = $10.00
+2025-04-25 06:48:47,454 - execution.portfolio_manager - INFO - BUY 0.004542 ETH/USDT @ $2201.60 = $10.00
+2025-04-25 06:48:47,454 - backtesting.backtester - INFO - Backtest progress: 85/85 days processed
+2025-04-25 06:48:47,454 - backtesting.backtester - INFO - Current date: 2025-04-25, Portfolio value: $98.60
+2025-04-25 06:48:47,959 - backtesting.backtester - INFO - Backtest plots saved to 'plots' directory
+2025-04-25 06:48:47,959 - crypto_bot - INFO - 
+Backtest Results:
+2025-04-25 06:48:47,959 - crypto_bot - INFO - Initial Portfolio: $100.00
+2025-04-25 06:48:47,960 - crypto_bot - INFO - Final Portfolio: $98.60
+2025-04-25 06:48:47,960 - crypto_bot - INFO - Total Return: -1.40%
+2025-04-25 06:48:47,960 - crypto_bot - INFO - Annual Return: -4.08%
+2025-04-25 06:48:47,960 - crypto_bot - INFO - Volatility: 19.38%
+2025-04-25 06:48:47,960 - crypto_bot - INFO - Sharpe Ratio: -0.31
+2025-04-25 06:48:47,960 - crypto_bot - INFO - Maximum Drawdown: 7.26%
+2025-04-25 06:48:47,960 - crypto_bot - INFO - Win Rate: 100.00%
+2025-04-25 06:48:47,960 - crypto_bot - INFO - Total Trades: 30

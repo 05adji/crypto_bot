@@ -1,0 +1,62 @@
+2025-04-23 22:57:54,829 - crypto_bot - INFO - Loading configuration...
+2025-04-23 22:57:54,829 - utils.config_loader - INFO - Configuration loaded successfully
+2025-04-23 22:57:54,829 - crypto_bot - INFO - Initializing data collector...
+2025-04-23 22:58:06,868 - data.collectors.market_data - ERROR - Exchange connection error: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1745423874836&recvWindow=10000&signature=b71aea9f64beb0ee44b4dd0a4a9289c12cfe52c5f4d76d8bc0b68b9c9fae3edd
+2025-04-23 22:58:06,868 - crypto_bot - INFO - Fetching historical data...
+2025-04-23 22:58:06,868 - data.collectors.market_data - INFO - Loading data for BTC/USDT (1h)
+2025-04-23 22:58:06,880 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (1h)
+2025-04-23 22:58:36,931 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 22:58:36,931 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-23 22:58:41,949 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (1h)
+2025-04-23 22:59:12,009 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 22:59:12,009 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-23 22:59:22,029 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (1h)
+2025-04-23 22:59:34,043 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 22:59:34,043 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 22:59:34,043 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (1h)
+2025-04-23 22:59:34,054 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (1h)
+2025-04-23 22:59:34,054 - data.collectors.market_data - INFO - Loading data for BTC/USDT (4h)
+2025-04-23 22:59:34,062 - data.collectors.market_data - INFO - Attempt 1: Fetching data for BTC/USDT (4h)
+2025-04-23 22:59:46,085 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 22:59:46,085 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-23 22:59:51,097 - data.collectors.market_data - INFO - Attempt 2: Fetching data for BTC/USDT (4h)
+2025-04-23 23:00:03,120 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:00:03,121 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-23 23:00:13,141 - data.collectors.market_data - INFO - Attempt 3: Fetching data for BTC/USDT (4h)
+2025-04-23 23:00:25,161 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:00:25,162 - data.collectors.market_data - ERROR - All attempts failed for BTC/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:00:25,162 - data.collectors.market_data - WARNING - Using synthetic data for BTC/USDT (4h)
+2025-04-23 23:00:25,165 - data.collectors.market_data - INFO - Loaded 501 candles for BTC/USDT (4h)
+2025-04-23 23:00:25,165 - data.collectors.market_data - INFO - Loading data for ETH/USDT (1h)
+2025-04-23 23:00:25,172 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (1h)
+2025-04-23 23:00:37,201 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:00:37,201 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-23 23:00:42,215 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (1h)
+2025-04-23 23:01:12,278 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:01:12,278 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-23 23:01:22,302 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (1h)
+2025-04-23 23:01:34,314 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:01:34,314 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (1h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:01:34,314 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (1h)
+2025-04-23 23:01:34,319 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (1h)
+2025-04-23 23:01:34,319 - data.collectors.market_data - INFO - Loading data for ETH/USDT (4h)
+2025-04-23 23:01:34,325 - data.collectors.market_data - INFO - Attempt 1: Fetching data for ETH/USDT (4h)
+2025-04-23 23:01:46,336 - data.collectors.market_data - WARNING - Attempt 1 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:01:46,337 - data.collectors.market_data - INFO - Waiting 5 seconds before retry...
+2025-04-23 23:01:51,349 - data.collectors.market_data - INFO - Attempt 2: Fetching data for ETH/USDT (4h)
+2025-04-23 23:01:58,599 - data.collectors.market_data - WARNING - Attempt 2 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:01:58,599 - data.collectors.market_data - INFO - Waiting 10 seconds before retry...
+2025-04-23 23:02:08,620 - data.collectors.market_data - INFO - Attempt 3: Fetching data for ETH/USDT (4h)
+2025-04-23 23:02:23,964 - data.collectors.market_data - WARNING - Attempt 3 failed: binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:02:23,965 - data.collectors.market_data - ERROR - All attempts failed for ETH/USDT (4h): binance GET https://api.binance.com/api/v3/exchangeInfo
+2025-04-23 23:02:23,965 - data.collectors.market_data - WARNING - Using synthetic data for ETH/USDT (4h)
+2025-04-23 23:02:23,970 - data.collectors.market_data - INFO - Loaded 501 candles for ETH/USDT (4h)
+2025-04-23 23:02:23,970 - crypto_bot - INFO - BTC/USDT 1h: 501 candles from 2025-04-03 02:59:34.044000 to 2025-04-23 22:59:34.044000
+2025-04-23 23:02:24,469 - crypto_bot - INFO - Candlestick plot created for BTC/USDT 1h
+2025-04-23 23:02:24,469 - crypto_bot - INFO - BTC/USDT 4h: 501 candles from 2025-01-30 15:00:25.162109 to 2025-04-23 23:00:25.162109
+2025-04-23 23:02:24,942 - crypto_bot - INFO - Candlestick plot created for BTC/USDT 4h
+2025-04-23 23:02:24,942 - crypto_bot - INFO - ETH/USDT 1h: 501 candles from 2025-04-03 03:01:34.314351 to 2025-04-23 23:01:34.314351
+2025-04-23 23:02:25,440 - crypto_bot - INFO - Candlestick plot created for ETH/USDT 1h
+2025-04-23 23:02:25,440 - crypto_bot - INFO - ETH/USDT 4h: 501 candles from 2025-01-30 15:02:23.965369 to 2025-04-23 23:02:23.965369
+2025-04-23 23:02:25,935 - crypto_bot - INFO - Candlestick plot created for ETH/USDT 4h
+2025-04-23 23:02:25,935 - crypto_bot - INFO - Successfully fetched data and created plots. Check the 'plots' directory.
